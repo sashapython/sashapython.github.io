@@ -1,0 +1,4 @@
+baseURL = 'https://sashapython.github.io/'
+locale = 'en-us'
+title = 'My New Hugo Project'
+theme = "terminal"
