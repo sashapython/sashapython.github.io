@@ -1,4 +1,73 @@
 baseURL = 'https://sashapython.github.io/'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = "Sasha's Blog"
 theme = "terminal"
+pagination.pagerSize = 5
+
+# Required for Chroma and the custom syntax highlighting.
+[markup.highlight]
+  noClasses = false
+
+[params]
+  # dir name of your main content (default is `content/posts`).
+  contentTypeName = "posts"
+
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
+
+  # show selector to switch language
+  showLanguageSelector = false
+
+  # set theme to full screen width
+  fullWidthTheme = false
+
+  # center theme with default width
+  centerTheme = true  # ← Changed to true
+
+  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
+  # then the file will be used as a cover automatically.
+  autoCover = true
+
+  # set post to show the last updated
+  showLastUpdated = false
+
+  # whether to show a page's estimated reading time
+  # readingTime = false # default
+
+  # whether to show a table of contents
+  # Toc = false # default
+
+  # set title for the table of contents
+  # TocTitle = "Table of Contents" # default
+
+[params.twitter]
+  # set Twitter handles for Twitter cards
+  creator = ""
+  site = ""
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Sasha's Blog"  # ← Changed from "Terminal"
+
+    [languages.en.params]
+      subtitle = "Pentesting & Cybersecurity Blog"  # ← Changed from default
+      owner = ""
+      keywords = ""
+      copyright = ""
+      menuMore = "Show more"
+      readMore = "Read more"
+      readOtherPosts = "Read other posts"
+      newerPosts = "Newer posts"
+      olderPosts = "Older posts"
+      missingContentMessage = "Page not found..."
+      missingBackButtonLabel = "Back to home page"
+      minuteReadingTime = "min read"
+      words = "words"
+
+      [languages.en.params.logo]
+        logoText = "Sasha's Blog"  # ← Changed from "Terminal"
+        logoHomeLink = "/"
+
+ 
+
